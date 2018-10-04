@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$fonstSize:18px;
+$success:#1CB7BE;
+$errors:#F46B66;
+$warns:#ffd600;
+$info:#47AAF0;
+
+$font: 'Open Sans';
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: $fonstSize;
+    font-family: $font;
+
+footer {
+        width: 100%;
+        background: #1c1b1a;
+        color: #fff;
+        position: relative;
+        padding: 20px 0;
+        .copyright-info {
+            text-align: center;
+            color: #fff;
+            font-size: .8rem;
+        }
+    }
+    nav{
+        padding: 20px 0px;
+        a{
+            display: block;text-align: center;
+            outline: 0px;
+        }
+        img{
+            
+            margin: 0 auto;
+            max-width: 80px;
+        }
+    }
+}
+
+#waprer{
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    overflow: hidden;
+
+    @media screen and (max-width:992px){
+        min-height: auto; 
+
+        height: 600px;
+
+    }
+
+    @media screen and (max-width:500px){
+        min-height: auto;
+        height: 329px;
+    
+        }
+    
+    .handle{
+
+   
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 34px;
+        left: 49vw;
+        transform: translate(0px, 0px);
+        z-index:7;
+        cursor: move;
+    
+        &:before{ position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+            display: block;
+            height: 100%;
+            left: 15px;
+            width: 2px;
+            opacity: .5;
+            background: -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(85%,transparent),color-stop(85%,hsla(0,0%,100%,.3)),to(hsla(0,0%,100%,.3)));
+            background: linear-gradient(180deg,transparent,transparent 85%,hsla(0,0%,100%,.3) 0,hsla(0,0%,100%,.3));
+            background-size: 100vh 13px;
+           
+        }
+    
+        .cercle{position: absolute;
+            border-radius: 50%;
+            transform: translate(-6px, 0px);
+            cursor: move;
+            display: block;
+            top: 50%;left: -6px;
+            width: 48px; background: #16e9d6;
+            height: 48px;
+
+            i{
+                transform: rotate(90deg);
+    display: block;
+    /* line-height: 28px; */
+    margin: 12px;
+            }
+        }
+    
+        
+      }
+}
+
+.layer{
+    position: absolute;
+    width:100vw;
+    height: 100%;
+    overflow: hidden;
+
+ 
+
+.content-warp{
+
+    @media screen and (max-width:992px){
+        display: none;
+
+    }
+    z-index: 6;
+    position: absolute;
+    top:20%;font-size: $fonstSize;
+    left: 8%;
+
+    width: 450px;
+    max-width: 100%;
+    h2{
+        color: $warns;
+        margin: 0px;
+        
+    }
+    span{
+        color: #fff; 
+    }
+    p{
+    color: #fff;
+    }
+}
+
+    
+
+    img{
+        position: absolute;
+       // top: 20%;
+        left: 0;
+        /* transform: translate(-50%, -50%); */
+        right: 0;
+        margin: 0 auto;width: 100%;    min-height: 100vh;
+    height: 100%;
+    
+    @media screen and (max-width:992px){
+        min-height: auto; 
+
+        height: 100%;
+
+    }
+
+    
+
+    }
+
+
+    &.bottom{
+        z-index: 2;
+        .bg{
+          //  background: #F46B66;
+           position: absolute; width: 100vw;
+           height: 100%;
+        }
+        
+
+        img{
+
+            z-index: 3;
+        }
+
+        .content-warp{
+            right: 8%;
+            bottom: 6%;
+            top: auto;
+            left: auto;
+        }
+     
+
+    }
+    &.top{
+        width: 50vw;
+     
+        .bg{
+           // background: #1CB7BE;
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            color:#222;
+            z-index:4;
+
+        }
+
+        img{
+
+            z-index: 5;
+        }
+     
+       
+        //width:50vw;
+
+ 
+        
+    }
+
+}
+
+
+ 
