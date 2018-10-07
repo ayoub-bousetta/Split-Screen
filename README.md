@@ -1,4 +1,4 @@
-# Split-Screen
+# Split Screen -[Try it live](https://ayoub-bousetta.github.io/Split-Screen/)-
 
 Split Screen  with a drag icon
 
